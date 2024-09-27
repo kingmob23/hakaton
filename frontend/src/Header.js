@@ -14,7 +14,7 @@ function Header() {
       </div>
       
       <div className="header__center">
-        <input type="text" placeholder="ПСА ПАТРОНА РАСХУЯРИЛИ НА СВО" />
+        <input type="text" placeholder="Пака" />
         <button className="header__searchButton">ГООООООЛ</button>
       </div>
       
