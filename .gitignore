@@ -1,6 +1,10 @@
+.vscode
+
 .venv
 __pycache__
 
 config.toml
 secrets/
 node_modules/
+data/
+

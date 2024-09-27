@@ -12,6 +12,7 @@ pydantic = "^2.9.2"
 pymongo = {extras = ["srv"], version = "^4.9.1"}
 toml = "^0.10.2"
 motor = "^3.6.0"
+polars = "^1.8.2"
 
 
 [build-system]
