@@ -1,11 +1,14 @@
 import polars as pl
 from database import get_all_video_ids, get_video_by_id
+from main import VideoReaction
 
 
-async def recommender(user_id: str, video_id: str, timestamp: str) -> list[str]:
+async def recommender(
+    user_id: str, reactions: VideoReaction, timestamp: str
+) -> list[str]:
 
     print(f"{user_id=}")
-    print(f"video watched: {await get_video_by_id(video_id)}")
+    print(f"videos watched: {reactions}")
     print(f"at {timestamp}")
     all_video_ids = await get_all_video_ids()
     print(f"{all_video_ids=}")
