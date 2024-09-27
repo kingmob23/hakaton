@@ -12,6 +12,12 @@ async def recommender(user_id: str, video_id: str, timestamp: str) -> list[str]:
     return all_video_ids
 
 
-print(pl.read_parquet("data/logs_df_2024-08-05.parquet"))
-print(pl.read_parquet("data/logs_df_2024-08-06.parquet"))
-print(pl.read_parquet("data/video_stat.parquet"))
+logs_df_1 = pl.read_parquet("data/logs_df_2024-08-05.parquet")
+logs_df_2 = pl.read_parquet("data/logs_df_2024-08-06.parquet")
+video_stat = pl.read_parquet("data/video_stat.parquet")
+
+logs_df = pl.concat([logs_df_1, logs_df_2])
+
+merged_df = logs_df.join(video_stat, on="video_id", how="left")
+
+print(merged_df)
