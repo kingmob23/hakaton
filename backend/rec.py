@@ -1,4 +1,3 @@
-import polars as pl
 from database import get_all_video_ids, get_video_by_id
 from schema import VideoReaction
 
