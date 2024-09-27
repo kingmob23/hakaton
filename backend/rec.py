@@ -1,5 +1,6 @@
-from database import get_all_video_ids, get_video_by_id
 import polars as pl
+from database import get_all_video_ids, get_video_by_id
+
 
 async def recommender(user_id: str, video_id: str, timestamp: str) -> list[str]:
 
@@ -11,6 +12,6 @@ async def recommender(user_id: str, video_id: str, timestamp: str) -> list[str]:
     return all_video_ids
 
 
-print(pl.read_parquet("../data/logs_df_2024-08-05.parquet"))
-print(pl.read_parquet("../data/logs_df_2024-08-06.parquet"))
-print(pl.read_parquet("../data/video_stat.parquet"))
+print(pl.read_parquet("data/logs_df_2024-08-05.parquet"))
+print(pl.read_parquet("data/logs_df_2024-08-06.parquet"))
+print(pl.read_parquet("data/video_stat.parquet"))
