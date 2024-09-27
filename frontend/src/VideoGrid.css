@@ -1,0 +1,13 @@
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Авто-установка колонок */
+  gap: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .videoGrid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Меньше колонок на маленьких экранах */
+  }
+}

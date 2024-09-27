@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-image: -webkit-linear-gradient(rgb(255, 255, 255), rgb(17, 0, 255), rgb(255, 0, 0));
+    color: white;
+  }
+  
+  .header__left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .header__center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .header__center input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .header__right .header__icon {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+  
