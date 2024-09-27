@@ -1,20 +1,9 @@
 from database import get_video_by_id
 from fastapi import FastAPI
-from pydantic import BaseModel
 from rec import recommender
+from schema import RecommendationRequest
 
 app = FastAPI()
-
-
-class VideoReaction(BaseModel):
-    video_id: str
-    reaction: bool
-
-
-class RecommendationRequest(BaseModel):
-    user_id: str
-    timestamp: str
-    reactions: list[VideoReaction]
 
 
 @app.get("/")
