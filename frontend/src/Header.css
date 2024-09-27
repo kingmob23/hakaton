@@ -3,8 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-image: -webkit-linear-gradient(rgb(255, 255, 255), rgb(17, 0, 255), rgb(255, 0, 0));
-    color: white;
+    background-color: darkorchid;
+    color: aliceblue;
+    
   }
   
   .header__left {

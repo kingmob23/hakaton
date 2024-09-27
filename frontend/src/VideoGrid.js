@@ -3,6 +3,8 @@ import VideoCard from './VideoCard';
 import './VideoGrid.css';
 
 function VideoGrid() {
+  const imageUrl = "https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/19403ebe26a46a077e309a07d382cd875a5929ab8bc7585e04e084a1f3462cb21602502290105.jpg";
+
   return (
     <div className="videoGrid">
       {/* Пример отображения видеокарточек */}
@@ -10,61 +12,61 @@ function VideoGrid() {
         title="Пример видео"
         timestamp="3 дня назад"
         channel="Канал 1"
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSygstOASLd5abW7mjFhWpjpjrQsYgIkikeBg&s"
+        image={imageUrl}
       />
       <VideoCard
         title="Видео 2"
         timestamp="2 недели назад"
         channel="Канал 2"
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy_gxwjr41x4uboimNtfb2i7ttWKsWslwF9g&s"
+        image={imageUrl}
       />
       <VideoCard
-        title="видео 3"
+        title=" на свой канал"
         timestamp="2 недели назад"
         channel="Канал 3"
-        image="https://s.rfi.fr/media/display/4c32c082-a3cf-11ec-860e-005056bfb2b6/w:1280/p:16x9/IMG_20220314_204141.jpg"
+        image={imageUrl}
       />
       <VideoCard
-        title="видео 4"
+        title="САША КЕРПЛ"
         timestamp="2 недели назад"
         channel="Канал 4"
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQjjHdbA0I0RKdFW2xCro3O7vgL-FnZV-MJg&s"
+        image={imageUrl}
       />
       <VideoCard
         title="Видео 5"
         timestamp="1 месяц назад"
         channel="Канал 5"
-        image="https://example.com/video5.jpg" // Заменить на действительное изображение
+        image={imageUrl}
       />
       <VideoCard
         title="Видео 6"
         timestamp="1 месяц назад"
         channel="Канал 6"
-        image="https://example.com/video6.jpg" // Заменить на действительное изображение
+        image={imageUrl}
       />
       <VideoCard
         title="Видео 7"
         timestamp="3 дня назад"
         channel="Канал 7"
-        image="https://example.com/video7.jpg" // Заменить на действительное изображение
+        image={imageUrl}
       />
       <VideoCard
         title="Видео 8"
         timestamp="4 дня назад"
         channel="Канал 8"
-        image="https://example.com/video8.jpg" // Заменить на действительное изображение
+        image={imageUrl}
       />
       <VideoCard
         title="Видео 9"
         timestamp="5 дней назад"
         channel="Канал 9"
-        image="https://example.com/video9.jpg" // Заменить на действительное изображение
+        image={imageUrl}
       />
       <VideoCard
         title="Видео 10"
         timestamp="6 дней назад"
         channel="Канал 10"
-        image="https://example.com/video10.jpg" // Заменить на действительное изображение
+        image={imageUrl}
       />
     </div>
   );

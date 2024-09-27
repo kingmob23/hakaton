@@ -10,12 +10,12 @@ function Header() {
           width={"64"} height={"64"} src="https://img.icons8.com/nolan/64/z-key.png"
           alt="logo"
         />
-        <h2>Ztube</h2>
+        <h2>Rutube</h2>
       </div>
       
       <div className="header__center">
-        <input type="text" placeholder="Пака" />
-        <button className="header__searchButton">ГООООООЛ</button>
+        <input type="text" placeholder="ПОИСК" />
+        <button className="header__searchButton">поиск</button>
       </div>
       
       <div className="header__right">
