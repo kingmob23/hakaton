@@ -8,7 +8,8 @@ function VideoCard({ image, title, channel, description, timestamp, like, dislik
       <div className="videoCard__info">
         <h4>{title}</h4>
         <p>{channel}</p>
-        <p>{description} • {timestamp}</p>
+        <p>{description}</p>
+        <p>{timestamp}</p>
         <button className="videoCard__likes">{like} Like</button>
         <button className="videoCard__dislikes">{dislike} Dislike</button>
       </div>
