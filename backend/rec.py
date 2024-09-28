@@ -1,6 +1,6 @@
 from database import get_all_video_ids, get_video_by_id
 from schema import VideoReaction
-
+import polars as pl
 
 async def recommender(
     user_id: str, reactions: VideoReaction, timestamp: str
