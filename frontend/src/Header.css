@@ -5,7 +5,11 @@
     padding: 10px 20px;
     background-color: black;
     color: aliceblue;   
+    font-family: 'Arial', 'Verdana', sans-serif;
+    position: sticky;
+    top:0;
   }
+
   
   .header__left {
     display: flex;
@@ -33,4 +37,3 @@
     margin-left: 20px;
     font-size: 24px;
   }
-  
