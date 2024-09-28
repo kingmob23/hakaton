@@ -10,3 +10,13 @@ class RecommendationRequest(BaseModel):
     user_id: str
     timestamp: str
     reactions: list[VideoReaction]
+
+class RecommendedVideo(BaseModel):
+    title: str
+    timestamp: str
+    channel: str 
+    description: str
+    like: str 
+    dislike: str
+class RecommendationResponse(BaseModel):
+    recommended_videos: list[RecommendedVideo]
