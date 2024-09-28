@@ -5,6 +5,7 @@ __pycache__
 
 config.toml
 secrets/
+
 node_modules/
 data/
 build/
