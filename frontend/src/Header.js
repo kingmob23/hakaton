@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header__left">
-        <h2>Rutube(refresh button)</h2>
+        <h2>Rutube</h2> <div className='refButn'><h2>(refresh button)</h2></div>
       </div>
     </div>
   );
