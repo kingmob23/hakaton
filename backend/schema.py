@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 class VideoReaction(BaseModel):
     video_id: str
-    reaction: bool
+    reaction: int 
 
 
 class RecommendationRequest(BaseModel):
@@ -16,7 +16,6 @@ class RecommendedVideo(BaseModel):
     timestamp: str
     channel: str 
     description: str
-    like: str 
-    dislike: str
+    userReaction: int
 class RecommendationResponse(BaseModel):
     recommended_videos: list[RecommendedVideo]

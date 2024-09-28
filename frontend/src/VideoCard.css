@@ -46,6 +46,8 @@
   }
   
   .videoCard__likes, .videoCard__dislikes {
+    height: 24px;
+    width: 24px;
     background: none;
     border: none;
     color: #0073e6;

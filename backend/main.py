@@ -21,6 +21,85 @@ app.add_middleware(
 def read_root():
     return {"Hello": "World"}
 
+@app.post("/reactions")
+async def handle_recommendation(request: RecommendationRequest) -> RecommendationResponse:
+    try:
+        recommended_videos = [
+        {
+           "title": "Название видео",
+            "timestamp": "2024-09-28T12:00:00",
+            "channel": "Название канала",
+            "description": "Описание видео",
+            "userReaction": 0,
+        },
+         {
+           "title": "Название видео",
+            "timestamp": "2024-09-28T12:00:00",
+            "channel": "Название канала",
+            "description": "Описание видео",
+            "userReaction": 0,
+        },
+         {
+           "title": "Название видео",
+            "timestamp": "2024-09-28T12:00:00",
+            "channel": "Название канала",
+            "description": "Описание видео",
+           "userReaction": 0,
+        },
+         {
+           "title": "Название видео",
+            "timestamp": "2024-09-28T12:00:00",
+            "channel": "Название канала",
+            "description": "Описание видео",
+            "userReaction": 0,
+        },
+        {
+           "title": "Название видео",
+            "timestamp": "2024-09-28T12:00:00",
+            "channel": "Название канала",
+            "description": "Описание видео",
+            "userReaction": 0,
+        },
+         {
+           "title": "Название видео",
+            "timestamp": "2024-09-28T12:00:00",
+            "channel": "Название канала",
+            "description": "Описание видео",
+            "userReaction": 0,
+        },
+         {
+           "title": "Название видео",
+            "timestamp": "2024-09-28T12:00:00",
+            "channel": "Название канала",
+            "description": "Описание видео",
+           "userReaction": 0,
+        },
+         {
+           "title": "Название видео",
+            "timestamp": "2024-09-28T12:00:00",
+            "channel": "Название канала",
+            "description": "Описание видео",
+            "userReaction": 0,
+        },
+         {
+           "title": "Название видео",
+            "timestamp": "2024-09-28T12:00:00",
+            "channel": "Название канала",
+            "description": "Описание видео",
+            "userReaction": 0,
+        },
+        {
+           "title": "Название видео",
+            "timestamp": "2024-09-28T12:00:00",
+            "channel": "Название канала",
+            "description": "Описание видео",
+            "userReaction": 0,
+        },
+    ]
+        return {"recommended_videos": recommended_videos}
+    except Exception as e:
+        raise HTTPException(status_code=422, detail=str(e))
+
 
 @app.post("/recommend")
 async def handle_recommendation(request: RecommendationRequest) -> RecommendationResponse:
@@ -31,72 +110,70 @@ async def handle_recommendation(request: RecommendationRequest) -> Recommendatio
             "timestamp": "2024-09-28T12:00:00",
             "channel": "Название канала",
             "description": "Описание видео",
-            "like": "100",
-            "dislike": "5"
+            "userReaction": 0,
         },
          {
            "title": "Название видео",
             "timestamp": "2024-09-28T12:00:00",
             "channel": "Название канала",
             "description": "Описание видео",
-            "like": "100",
-            "dislike": "5"
+            "userReaction": 0,
         },
          {
            "title": "Название видео",
             "timestamp": "2024-09-28T12:00:00",
             "channel": "Название канала",
             "description": "Описание видео",
-            "like": "100",
-            "dislike": "5"
+           "userReaction": 0,
         },
          {
            "title": "Название видео",
             "timestamp": "2024-09-28T12:00:00",
             "channel": "Название канала",
             "description": "Описание видео",
-            "like": "100",
-            "dislike": "5"
+            "userReaction": 0,
+        },
+        {
+           "title": "Название видео",
+            "timestamp": "2024-09-28T12:00:00",
+            "channel": "Название канала",
+            "description": "Описание видео",
+            "userReaction": 0,
         },
          {
            "title": "Название видео",
             "timestamp": "2024-09-28T12:00:00",
             "channel": "Название канала",
             "description": "Описание видео",
-            "like": "100",
-            "dislike": "5"
+            "userReaction": 0,
         },
          {
            "title": "Название видео",
             "timestamp": "2024-09-28T12:00:00",
             "channel": "Название канала",
             "description": "Описание видео",
-            "like": "100",
-            "dislike": "5"
+           "userReaction": 0,
         },
          {
            "title": "Название видео",
             "timestamp": "2024-09-28T12:00:00",
             "channel": "Название канала",
             "description": "Описание видео",
-            "like": "100",
-            "dislike": "5"
+            "userReaction": 0,
         },
          {
            "title": "Название видео",
             "timestamp": "2024-09-28T12:00:00",
             "channel": "Название канала",
             "description": "Описание видео",
-            "like": "100",
-            "dislike": "5"
+            "userReaction": 0,
         },
-         {
+        {
            "title": "Название видео",
             "timestamp": "2024-09-28T12:00:00",
             "channel": "Название канала",
             "description": "Описание видео",
-            "like": "100",
-            "dislike": "5"
+            "userReaction": 0,
         },
     ]
         return {"recommended_videos": recommended_videos}
