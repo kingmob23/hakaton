@@ -1,13 +1,30 @@
 .videoGrid {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(4, 1fr); /* 2 колонки одинаковой ширины */
-  gap: 20px; /* Расстояние между карточками */
+  grid-template-columns: repeat(5, 1fr); /* Default to 5 columns */
+  gap: 20px; /* Spacing between cards */
 }
 
+@media (max-width: 1200px) {
+  .videoGrid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .videoGrid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
+  }
+}
 
 @media (max-width: 768px) {
   .videoGrid {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Меньше колонок на маленьких экранах */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .videoGrid {
+    grid-template-columns: 1fr; /* 1 column for mobile */
   }
 }
