@@ -5,11 +5,18 @@
     padding: 10px 20px;
     background-color: black;
     color: aliceblue;   
+    font-family: 'Arial', 'Verdana', sans-serif;
+    position: sticky;
+    top:0;
   }
-  
+  .refButn{
+    font-size: 10px;
+    padding-left: 5px;
+  }
+
   .header__left {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
   
   .header__logo {
@@ -33,4 +40,3 @@
     margin-left: 20px;
     font-size: 24px;
   }
-  
